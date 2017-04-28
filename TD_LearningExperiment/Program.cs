@@ -13,7 +13,7 @@ namespace TD_LearningExperiment
             Console.WriteLine("==========ValueFunction: ====================");
             foreach (var row in valueFunction)
             {
-                Console.WriteLine($"\tS,A: {row.Key.originState} to {row.Key.afterState}, value: {row.Value}");
+                Console.WriteLine($"\tS,A: {row.Key.originState.Name} to {row.Key.afterState.Name}, value: {row.Value}");
             }
             Console.WriteLine("============================================");
         }

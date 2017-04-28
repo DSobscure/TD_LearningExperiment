@@ -17,7 +17,7 @@ namespace TD_LearningExperiment
 
         public TransitionAction GetBestAction(State currentState, Dictionary<Transition, double> valueFunction)
         {
-            double maxScore = -1;
+            double maxScore = double.MinValue;
             TransitionAction bestAction = default(TransitionAction);
             foreach (var action in currentState.AvailableStateRewards)
             {
